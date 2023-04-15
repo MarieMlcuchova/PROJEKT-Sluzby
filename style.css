@@ -1,0 +1,225 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 60px 20px;
+}
+
+header,
+section {
+    text-align: center;
+}
+
+.traveler {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #000000;
+    margin: 40px 0px;
+}
+
+h1::after {
+    content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+    background-color: #407BFF;
+    margin: auto;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #000000;
+    margin: 0px;
+}
+
+section {
+    margin-top: 60px; 
+}
+
+.aboutus-text {
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 40px 0px 30px 0px;
+}
+
+.services-text {
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 15px 0px 30px 0px;
+}
+
+a {
+    display: block;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin: auto;
+    text-decoration: none;
+    font-weight: bold;
+    max-width: fit-content;
+}
+
+.adventure {
+    margin-bottom: 10px;
+    background-color: #407BFF;
+}
+
+.beach {
+    background-color: #8B8B8B;
+}
+
+.text {
+    font-size: 13px;
+    color: #8B8B8B;
+    text-align: left;
+    flex-basis: 90%;
+}
+
+.option {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 640px) {
+    .button {
+        display: flex;
+        margin: 0;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .traveler {
+        width: 400px;
+    }
+
+    .adventure {
+        margin-bottom: 0px;
+    }
+
+    a {
+        margin: 0;
+    }
+
+    .options1,
+    .options2 {
+        display: flex;
+        gap: 20px;
+    }
+
+    .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 40px 15px 20px 15px;
+    }
+
+    .text {
+        text-align: center;
+        margin: 0;
+    }
+
+    h1 {
+        margin: 30px 0px 0px 0px; 
+    } 
+
+    section {
+        margin-top: 80px; 
+    }
+
+    .services-text {
+        margin: 15px 0px 40px 0px;
+    } 
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        max-width: 1040px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+    }
+
+    .img-traveler,
+    .aboutus {
+        flex-basis: 50%;
+    }
+
+    .aboutus {
+        text-align: left;
+    }
+
+    .button {
+        justify-content: flex-start;
+    }
+
+    .img-traveler img {
+        width: 425px;
+    }
+
+    .services1 {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+    }
+
+    .aboutservices1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        width: 430px;
+    }
+
+    .option {
+        padding: 40px 15px;
+    }
+
+    .options1 {
+        width: 550px;
+    }
+
+    .services2 {
+        display: flex;
+        gap: 60px;
+    }
+
+    .options2 {
+        width: 550px;
+    }
+
+    .aboutservices2 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        width: 430px;
+    }
+
+    .services1,
+    .services2 {
+        margin-top: 80px;
+    }
+
+    h1::after {
+        margin-left: 0;
+    }
+}
